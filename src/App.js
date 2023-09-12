@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Modal from './Components/Collapse';
+import Ecommerce from './Components/EcommerceProject/Ecommerce';
+import FormDesgin from './Components/FormDesgin';
+import HostingLandingPage from './Components/HostingWebsite/HostingLandingPage';
+import LandingPageConent from './Components/LandingPageConent';
+import ResuableContentBox from './Components/ResuableContentBox';
+import { Dashboard } from './Components/dashboard/Dashboard';
+// import Pagination from './pagination/Pagination';
+import Form from './Form';
+import Landing from './Landing';
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //  <div className={` back`}>
+    //  {/* <Pagination/> */}
+    //  {/* <Form/> */}
+    //  {/* <Landing/> */}
+    //  {/* <LandingPageConent/> */}
+    //  {/* <div className=' '> */}
+    //  {/* <ResuableContentBox style={"right-[10%] bottom-[30%]"} mwidth={"14%"} head={"Plane"} conent={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."} 
+    //  buttonText={"Buy now"}/> */}
+    //  {/* </div> */}
+    //  {/* <ResuableContentBox style={"left-[10%] bottom-[10%]"} mwidth={"25%"} head={"Broken "} conent={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."} 
+    //  /> */}
+   // {/* </div> */}
+    <div>
+      {/* <FormDesgin/> */}
+      {/* <Dashboard/> */}
+      {/* <Modal/> */}
+      {/* <HostingLandingPage/> */}
+      <Ecommerce/>
     </div>
+
   );
 }
 

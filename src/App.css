@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+.header{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.20) 100%);
+box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(20px);
+}
+.back{
+  width: 100%;
+height: 100vh;
+flex-shrink: 0;
+  background-image: url("./images/background.jpg") ;
+}
+.reuseablebox{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.20) 100%);
+backdrop-filter: blur(20px);
+
+
+}
+.boxshad{
+  box-shadow: 0px 0px 64px 0px rgba(176, 0, 0, 0.30);
+}
+.pricingcard{
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.getintocuhshadow{
+  box-shadow:0px 10px 20px 0px rgba(41, 41, 42, 0.07)
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb::-webkit-slider-thumb{
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
