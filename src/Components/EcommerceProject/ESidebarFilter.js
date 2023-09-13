@@ -74,13 +74,21 @@ const ESidebarFilter = ({ productList, setFilterProducts,filterproducts }) => {
 
   const getProductsList=(min,max)=>{
     let temp = productList.filter((it) => it.price >= min && it.price <= max);
-    temp.sort((a, b) => a.price - b.price);
+    temp=temp.sort((a, b) => a.price - b.price);
     setFilterProducts(temp);
+  }
+
+  const HandleSearch=(e)=>{
+      let temp = productList.filter((it) => it.title.toLowerCase().indexOf(e.target.value.toLowerCase())!== -1);
+      setFilterProducts(temp)
   }
   
 
   return (
     <div className="w-48 fixed">
+      <div>
+        <input className=" rounded-lg border-[2px] border-solid  mr-3" type="search" placeholder="Enter Product Name" onChange={HandleSearch}/>
+      </div>
       <h1>
         Filter By:
         {filterlist.map((item) => (
