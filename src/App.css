@@ -82,3 +82,42 @@ backdrop-filter: blur(20px);
   pointer-events: all;
   position: relative;
 }
+
+/* main page design */
+.animate-fade-in {
+  animation: fade-in 3s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+}
+75% {
+    opacity: 0;
+}
+100% {
+    opacity: 100%;
+}
+}
+.animate-title {
+  animation: title 3s ease-out forwards;
+}
+
+@keyframes title{
+0% {
+  line-height: 0%;
+  letter-spacing: .25em;
+  opacity: 0;
+}
+25% {
+  line-height: 0%;
+  opacity: 0;
+}
+80% {
+  opacity: 100%;
+}
+100% {
+  line-height: 100%;
+  opacity: 100%;
+}
+}

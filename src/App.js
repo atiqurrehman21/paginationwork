@@ -5,6 +5,7 @@ import Ecommerce from './Components/EcommerceProject/Ecommerce';
 import FormDesgin from './Components/FormDesgin';
 import HostingLandingPage from './Components/HostingWebsite/HostingLandingPage';
 import LandingPageConent from './Components/LandingPageConent';
+import HomePage from './Components/MainPortfolioWebsite/HomePage';
 import QuizApp from './Components/QuizApp/QuizApp';
 import ResuableContentBox from './Components/ResuableContentBox';
 import { Dashboard } from './Components/dashboard/Dashboard';
@@ -34,7 +35,8 @@ function App() {
       {/* <Ecommerce/> */}
       {/* <Card/> */}
       {/* Quiz app */}
-      <QuizApp/>
+      {/* <QuizApp/> */}
+      <HomePage/>
 
     </div>
 
