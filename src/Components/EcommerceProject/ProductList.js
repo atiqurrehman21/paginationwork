@@ -4,7 +4,7 @@ const ProductList = ({productList, setproductList}) => {
  
  
   return (
-    <div className="pl-48 w-full h-full overflow-auto"> 
+    <div className="pl-56 w-full h-full overflow-auto"> 
         <div className="flex justify-center gap-2 flex-wrap">
       {productList.map((item)=>(
       <div class=" max-w-[300px]  flex flex-col items-center p-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

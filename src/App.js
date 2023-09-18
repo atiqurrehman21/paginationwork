@@ -1,9 +1,11 @@
 import './App.css';
+import Card from './Components/CardDesgin/Card';
 import Modal from './Components/Collapse';
 import Ecommerce from './Components/EcommerceProject/Ecommerce';
 import FormDesgin from './Components/FormDesgin';
 import HostingLandingPage from './Components/HostingWebsite/HostingLandingPage';
 import LandingPageConent from './Components/LandingPageConent';
+import QuizApp from './Components/QuizApp/QuizApp';
 import ResuableContentBox from './Components/ResuableContentBox';
 import { Dashboard } from './Components/dashboard/Dashboard';
 // import Pagination from './pagination/Pagination';
@@ -29,7 +31,10 @@ function App() {
       {/* <Dashboard/> */}
       {/* <Modal/> */}
       {/* <HostingLandingPage/> */}
-      <Ecommerce/>
+      {/* <Ecommerce/> */}
+      {/* <Card/> */}
+      <QuizApp/>
+
     </div>
 
   );

@@ -86,11 +86,13 @@ const ESidebarFilter = ({ productList, setFilterProducts,filterproducts }) => {
 
   return (
     <div className="w-48 fixed">
-      <div>
+      <div className="mt-2 mb-2">
+        <label>Search:</label>
         <input className=" rounded-lg border-[2px] border-solid  mr-3" type="search" placeholder="Enter Product Name" onChange={HandleSearch}/>
       </div>
-      <h1>
+      <h1 className=" mb-1">
         Filter By:
+        </h1>
         {filterlist.map((item) => (
           <div
             className="flex  gap-3 cursor-pointer"
@@ -130,7 +132,7 @@ const ESidebarFilter = ({ productList, setFilterProducts,filterproducts }) => {
           />
           <input type="submit" value="submit" />
         </form> */}
-        <div>
+        <div className="mt-4">
         
         <MultiRangeSlider
       min={minmax.min}
@@ -139,7 +141,6 @@ const ESidebarFilter = ({ productList, setFilterProducts,filterproducts }) => {
     />
         </div>
         {/* <button onClick={() => HandleCancel()}>Cancel All Filter</button> */}
-      </h1>
     </div>
   );
 };
