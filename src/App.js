@@ -33,6 +33,7 @@ function App() {
       {/* <HostingLandingPage/> */}
       {/* <Ecommerce/> */}
       {/* <Card/> */}
+      {/* Quiz app */}
       <QuizApp/>
 
     </div>
