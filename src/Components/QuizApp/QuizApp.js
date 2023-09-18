@@ -14,7 +14,7 @@ const QuizApp = () => {
     const answers = quizlist.questions[CurrentQuestions].correctAnswer;
     if (answers === ChecktedValue) {
       let answer = result;
-      answer =answer+5;
+      answer = answer + 5;
       setResult(answer);
       setIsCheckedValue("");
     }
@@ -23,6 +23,14 @@ const QuizApp = () => {
     } else {
       setCurrentQuestions(CurrentQuestions + 1);
     }
+  };
+
+  const progress = () => {
+    let total = quizlist.questions.length * 5;
+
+    let myprogress = (result * 100) / total;
+
+    return myprogress + "%";
   };
 
   return (
@@ -36,15 +44,25 @@ const QuizApp = () => {
       {yourResult ? (
         <div className=" max-w-[700px] min-w-[250px] rounded-md  px-8  py-16 bg-white w-full text-[#830582] ">
           <div className=" flex justify-center items-center flex-col gap-5">
-            <p className=" font-bold">Result</p>
-            <p className=" font-bold">Total Questions:{quizlist.questions.length}</p>
+            <p className=" font-bold text-3xl">Result</p>
+            <p className=" font-bold">
+              Total Questions:{quizlist.questions.length}
+            </p>
             <p className=" font-bold">Total Score:{result}</p>
-            <p className=" font-bold">Correct Answer:{result/5}</p>
-            <p className=" font-bold">Wrong Answer:{quizlist.questions.length-result/5}</p>
-
-
-            
-            
+            <p className=" font-bold">Correct Answer:{result / 5}</p>
+            <p className=" font-bold">
+              Wrong Answer:{quizlist.questions.length - result / 5}
+            </p>
+            <div class="w-full bg-neutral-200 dark:bg-neutral-600 rounded-lg">
+              <div
+                class={` p-0.5   ${
+                  20 === result ? "bg-[#008000]" : "bg-[#0000FF]"
+                } text-center text-xs font-medium leading-none text-white rounded-lg`}
+                style={{ width: progress() }}
+              >
+                {progress()}
+              </div>
+            </div>
           </div>
         </div>
       ) : (
