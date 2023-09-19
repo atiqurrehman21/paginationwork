@@ -5,13 +5,18 @@ import Ecommerce from './Components/EcommerceProject/Ecommerce';
 import FormDesgin from './Components/FormDesgin';
 import HostingLandingPage from './Components/HostingWebsite/HostingLandingPage';
 import LandingPageConent from './Components/LandingPageConent';
+import Contact from './Components/MainPortfolioWebsite/Contact';
+import Discord from './Components/MainPortfolioWebsite/Discord';
 import HomePage from './Components/MainPortfolioWebsite/HomePage';
+import Porojects from './Components/MainPortfolioWebsite/Porojects';
 import QuizApp from './Components/QuizApp/QuizApp';
 import ResuableContentBox from './Components/ResuableContentBox';
 import { Dashboard } from './Components/dashboard/Dashboard';
 // import Pagination from './pagination/Pagination';
 import Form from './Form';
 import Landing from './Landing';
+import {  Link } from "react-router-dom";
+
 function App() {
   
   return (
@@ -36,7 +41,10 @@ function App() {
       {/* <Card/> */}
       {/* Quiz app */}
       {/* <QuizApp/> */}
-      <HomePage/>
+      {/* <HomePage/> */}
+      {/* <Porojects/> */}
+      {/* <Contact/> */}
+      <Discord/>
 
     </div>
 

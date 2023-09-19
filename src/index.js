@@ -3,11 +3,42 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import HomePage from './Components/MainPortfolioWebsite/HomePage';
+import Discord from './Components/MainPortfolioWebsite/Discord';
+import Contact from './Components/MainPortfolioWebsite/Contact';
+import Porojects from './Components/MainPortfolioWebsite/Porojects';
+import NewLetterPage from './Components/MainPortfolioWebsite/NewLetterPage';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/discord",
+    element: <Discord />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/projects",
+    element: <Porojects />,
+  },
+  {
+    path: "/newsletter",
+    element: <NewLetterPage />,
+  },
 
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 

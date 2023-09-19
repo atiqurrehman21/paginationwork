@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
-import HeroSection from "./HeroSection";
+import HeroSection from "./Components/HeroSection";
+import Navbar from "./Components/Navbar";
 
 const HomePage = () => {
   return (
-    <div className="bg-[#0E0E10] flex flex-col items-center justify-center w-screen h-full bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="bg-[#0E0E10] min-h-[100vh] flex flex-col items-center  w-screen h-full bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <Navbar/>
       <HeroSection/>
     </div>
