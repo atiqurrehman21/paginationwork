@@ -52,9 +52,10 @@ const FormDesgin = () => {
   }
 
   return (
-    <div className="max-h-[1200px] w-full p-4 bg-white flex-col flex justify-center items-center gap-8">
-      <h3>Registration Form</h3>
-      <div className="flex flex-col justify-start gap-2 items-stretch max-w-[400px] w-full relative">
+    <div 
+    style={{background: "linear-gradient(#e66465, #9198e5)"}} className="min-h-[100vh] w-full p-4 bg-white flex-col flex justify-center items-center gap-8">
+      <h3 className="text-black font-bold">Registration Form</h3>
+      <div className="flex flex-col  justify-start gap-2 items-stretch max-w-[400px] w-full relative">
         <label
           className="text-[#666]  text-xs font-semibold leading-[18px]"
           form="username"
