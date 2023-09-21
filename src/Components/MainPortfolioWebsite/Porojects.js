@@ -27,6 +27,10 @@ const Porojects = () => {
     {
       title:"Form Design ",
       href:"/projects/formdesign",
+    },
+    {
+      href:"/dragDrop",
+      title:"Drag Drop"
     }
   ]
   return (
@@ -40,7 +44,7 @@ const Porojects = () => {
         </p>
         <div class="w-full h-px bg-zinc-800 mt-12 mb-12"></div>
 
-        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-3 ">
          {projectlist.map((it,index)=>(
           <div className="overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 ">
             <div className="pointer-events-none">

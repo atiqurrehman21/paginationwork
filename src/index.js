@@ -18,6 +18,7 @@ import Ecommerce from "./Components/EcommerceProject/Ecommerce"
 import FlightLandingPage from './Components/LandPageWebsite/FlightLandingPage';
 import HostingWebsite from "./Components/HostingWebsite/HostingLandingPage"
 import {Dashboard} from "./Components/dashboard/Dashboard"
+import DragDrop from './Components/DragDrop/DragDrop';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path:"/projects/formdesign",
     element:<FormDesign/>
+  },
+  {
+    path:"/dragDrop",
+    element:<DragDrop/>
   }
   // 
 
@@ -72,7 +77,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <RouterProvider router={router} />
-     <App/>
   </React.StrictMode>
 );
 
