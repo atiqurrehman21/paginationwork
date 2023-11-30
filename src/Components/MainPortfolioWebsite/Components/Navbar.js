@@ -9,7 +9,7 @@ const Navbar = () => {
             class="text-md duration-500 text-zinc-400 hover:text-zinc-300 hover:text-lg"
             href="/projects"
           >
-            Free Tutorials
+            Projects
           </a>
           <a
             class="text-md duration-500 text-zinc-400 hover:text-zinc-300 hover:text-lg"
